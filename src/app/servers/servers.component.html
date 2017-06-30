@@ -1,6 +1,17 @@
+<label>Server Name</label>
+<!--<input
+  type="text"
+  class="form-control"
+  (input)="onServerUpdateName($event)">-->git
+<br/>
+<p> The server name is : {{serverName}}</p>
+<br/>
 <button
         class="btn btn-primary"
-        [disabled]="!allowNewServer">Add Server</button>
-<p [innerText]="allowNewServer"></p> <!-- Property Binding -->
+        [disabled]="!allowNewServer"
+        (click)="onCreateServer()">Add Server</button>
+<!--<p>{{allowNewServer}}</p> string interpolation-->
+<!--<p [innerText]="allowNewServer"></p>  Property Binding -->
+<p>{{serveCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
