@@ -2,10 +2,15 @@
 <!--<input
   type="text"
   class="form-control"
-  (input)="onServerUpdateName($event)">-->git
+  (input)="onServerUpdateName($event)">-->
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName">
 <br/>
 <p> The server name is : {{serverName}}</p>
 <br/>
+
 <button
         class="btn btn-primary"
         [disabled]="!allowNewServer"
